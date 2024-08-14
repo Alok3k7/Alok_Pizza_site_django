@@ -1,2 +1,8 @@
-<h1>Alok's Pizza Corner</h1>
-<a href ="{% url "order"%}"> Wan a Pizza Order Now !</a>
+{% extends "pizza/base.html" %}
+
+{% block 'body'%}
+<div class="text-center">
+  {%load static %}
+  <img src="{% static 'pizzas.jpg' %}" class="img-fluid" alt="Alok Pizza Corner">
+
+{%endblock%}
